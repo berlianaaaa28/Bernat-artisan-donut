@@ -1,0 +1,745 @@
+/* General styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Putih sebagai latar belakang */
+    color: #333; /* Teks utama menggunakan warna abu gelap */
+}
+
+/* Image styles - responsive images */
+img {
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 85%;
+    height: auto;
+    display: block;
+}
+
+/* Header styling */
+header {
+    background-color: #001f3f; /* Biru dongker */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    background-color: #f4f4f9; /* Putih keabu-abuan untuk latar belakang hero */
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh /*Fullscreen height */;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+    color: #001f3f; /* Biru dongker */
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #001f3f; /* Biru dongker */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #555; /* Teks paragraf abu gelap */
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background-color: #001f3f; /* Biru dongker */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-content .btn:hover {
+    background-color: #004080; /* Biru yang lebih cerah */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Order Section */
+#order {
+    padding: 40px;
+    background-color: #ffffff; /* Putih */
+    border-top: 2px solid #e0e0e0;
+    margin-top: 20px;
+}
+
+#order h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #001f3f; /* Biru dongker */
+    margin-bottom: 20px;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #f4f4f9; /* Abu terang */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-details {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #ffffff; /* Putih */
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.order-details h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #001f3f; /* Biru dongker */
+}
+
+.order-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #001f3f; /* Biru dongker */
+    margin-top: 10px;
+}
+
+/* Order Form */
+#order-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#order-form label {
+    font-size: 1rem;
+    color: #555; /* Abu gelap */
+}
+
+#order-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#order-form .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #001f3f; /* Biru dongker */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#order-form .btn:hover {
+    background-color: #004080; /* Biru cerah */
+}
+
+#order-form .checkout-btn {
+    background-color: #25d366; /* Hijau WhatsApp */
+    margin-top: 10px;
+}
+
+#order-form .checkout-btn:hover {
+    background-color: #1da851; /* Hijau gelap */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f3f; /* Biru dongker */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .order-container {
+        padding: 15px;
+    }
+
+    #order h2 {
+        font-size: 1.5rem;
+    }
+
+    .order-details {
+        padding: 10px;
+    }
+
+    #order-form .btn {
+        width: 100%;
+    }
+}
+
+
+/* Menu Section */
+.menu-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    color: #001f3f; /* Biru dongker */
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.menu-item span {
+    font-size: 1.2rem;
+    color: #001f3f; /* Biru dongker */
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f; /* Biru dongker */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+}
+
+.contact-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-item p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.contact-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #1d72b8;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #007bb5;
+}
+
+.contact-link .icon {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .contact-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-item {
+        width: 100%;
+    }
+}
+
+/* Hero section */
+.hero {
+    background-color: #f4f4f9; /* Latar belakang putih keabu-abuan */
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full screen height */
+}
+
+.hero-image img {
+    width: 425px;
+    height: auto; 
+    display:block;
+}
+
+.hero-content {
+    color: #001f3f; /* Biru dongker */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /*Menyelaraskan teks ke tengah */
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #001f3f; /* Biru dongker */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #555; /* Abu gelap */
+    margin: 20px 0;
+}
+
+.hero-content .btn {
+    padding: 10px 20px;
+    background-color: #001f3f; /* Biru dongker */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #004080; /* Biru lebih cerah */
+}
+
+/* Menu Section */
+#products {
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.product button {
+    padding: 10px 20px;
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #004080;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #001f3f; /* Biru dongker */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling untuk bagian "Keranjang Saya" */
+#cart h2 {
+    background-color: #001f3f; /* Biru dongker */
+    color: white; /* Warna tulisan hitam */
+    padding: 15px; /* Jarak dalam */
+    border-radius: 8px; /* Membuat sudut kotak melengkung */
+    text-align: center; /* Teks di tengah */
+    font-size: 1.5em; /* Ukuran font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+}
+
+/* Contact Section - Make the list items horizontal */
+#contact ul {
+    list-style-type: none; /* Menghilangkan bullet pada list */
+    padding: 0;
+    display: flex; /* Menggunakan flexbox untuk menyusun elemen secara horizontal */
+    justify-content: space-evenly; /* Memberikan jarak yang rata antara elemen */
+}
+
+#contact ul li {
+    display: inline-block; /* Membuat <li> menjadi inline-block untuk menyusunnya secara horizontal */
+}
+
+#contact ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah di link */
+    color: #333; /* Warna teks */
+    font-size: 18px; /* Ukuran font */
+    display: flex; /* Menggunakan flexbox untuk menjaga ikon dan teks tetap sejajar */
+    align-items: center; /* Menyusun ikon dan teks secara vertikal sejajar */
+}
+
+#contact ul li a i {
+    margin-right: 8px; /* Memberikan sedikit jarak antara ikon dan teks */
+    font-size: 20px; /* Ukuran ikon */
+}
+
+#contact ul li a:hover {
+    color: #007BFF; /* Warna teks saat hover */
+}
+
+/* Contact Section */
+#contact h2 {
+    font-size: 3rem; /* Ukuran font lebih besar */
+    color: #001f3f; /* Biru dongker */
+    font-weight: bold; /* Membuat tulisan lebih tebal */
+    text-align: center; /* Menyusun teks di tengah */
+    margin-bottom: 40px; /* Memberikan jarak bawah yang cukup */
+    text-transform: uppercase; /* Memberikan efek huruf kapital semua */
+    letter-spacing: 2px; /* Menambah jarak antar huruf */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk teks */
+    animation: fadeIn 1s ease-out; /* Efek animasi muncul */
+}
+
+/* Animasi untuk efek muncul */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efek transisi pada seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Efek fade-in untuk seluruh halaman */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aturan tambahan untuk animasi pada elemen lain */
+.hero, .menu-section, .contact-section, #order {
+    animation: fadeIn 1s ease-out;
+}
+
+.hero {
+    animation: fadeIn 1s ease-out 0.3s; /* Delay 0.3 detik */
+}
+
+.menu-section {
+    animation: fadeIn 1s ease-out 0.6s; /* Delay 0.6 detik */
+}
+
+.contact-section {
+    animation: fadeIn 1s ease-out 0.9s; /* Delay 0.9 detik */
+}
+button, .btn {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.1); /* Membesarkan tombol sedikit */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Memberikan bayangan lebih besar */
+}
+button:active, .btn:active {
+    transform: scale(0.95); /* Mengecilkan tombol sedikit */
+    transition: transform 0.1s ease-in-out;
+}
+.btn-gradient {
+    background: linear-gradient(45deg, #001f3f, #004080, #25d366);
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.btn-light {
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background-color: #001f3f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-light:hover {
+    background-color: #004080;
+    box-shadow: 0 0 15px 5px rgba(0, 191, 255, 0.5);
+}
+
+.btn-light::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.4), rgba(255,255,255,0) 60%);
+    transform: translateX(-50%) translateY(-50%) scale(0);
+    transition: transform 0.4s ease-in-out;
+    border-radius: 50%;
+}
+
+.btn-light:hover::after {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+.btn-floating {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.btn-floating:hover {
+    transform: translateY(-5px); /* Tombol sedikit melayang */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* Animasi hover tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    background: linear-gradient(45deg, #001f3f, #eae6e6);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.4);
+    background: linear-gradient(45deg, #001f3f, #001f3f);
+}
+.hero-content {
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.hero-image img {
+    animation: fadeInRight 1.5s ease-in-out;
+}
+
+/* Keyframes untuk animasi */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.product img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.btn-floating {
+    position: relative;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+input:focus {
+    border: 2px solid #122246; 
+    outline: none;
+    box-shadow: 0 5px 15px rgba(215, 189, 189, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
